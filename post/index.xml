@@ -7,74 +7,213 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Yifan Qian</copyright>
-    <lastBuildDate>Tue, 19 Apr 2016 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jan 2018 19:40:27 +0000</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Customizing the homepage with widgets</title>
-      <link>https://haczqyf.github.io/post/widgets/</link>
-      <pubDate>Tue, 19 Apr 2016 00:00:00 +0100</pubDate>
+      <title>Theatre Network</title>
+      <link>https://haczqyf.github.io/post/theatrenetwork/</link>
+      <pubDate>Thu, 04 Jan 2018 19:40:27 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/post/widgets/</guid>
+      <guid>https://haczqyf.github.io/post/theatrenetwork/</guid>
       <description>
 
-&lt;p&gt;Homepage widgets display as sections on the homepage. They can be enabled/disabled and configured as desired. Academic has the following widgets available to use:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bl.ocks.org/haczqyf/raw/8bc97a556baf43e50256a1e3745c284c/&#34; target=&#34;_blank&#34;&gt;Interactive visualization for theatre network&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Blue nodes represent 210 focal theatres, and orange nodes represent 630 non-focal theatres. The size of ndoes is based on its degree.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;About/biography&lt;/li&gt;
-&lt;li&gt;Selected publications&lt;/li&gt;
-&lt;li&gt;Recent publications&lt;/li&gt;
-&lt;li&gt;Recent news/blog posts&lt;/li&gt;
-&lt;li&gt;Projects&lt;/li&gt;
-&lt;li&gt;Selected talks&lt;/li&gt;
-&lt;li&gt;Recent talks&lt;/li&gt;
-&lt;li&gt;Contact&lt;/li&gt;
-&lt;li&gt;Tag cloud&lt;/li&gt;
-&lt;li&gt;Hero (introduction)&lt;/li&gt;
-&lt;li&gt;Custom widget (demonstrated with the &lt;em&gt;teaching&lt;/em&gt; example)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Highlighting&lt;/code&gt;: Double-click on a node to fade out all but its immediate neighbours. Double-click to bring them back again.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tooltip&lt;/code&gt;: When we hover over the node or link, this will display the node&amp;rsquo;s or link&amp;rsquo;s measures.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The example site that you copied to create your site uses all the different types of widget (except talks), so you can generally just delete the widgets you don&amp;rsquo;t need and customize the parameters of the widgets you wish to keep.&lt;/p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#network-measures&#34;&gt;Network Measures&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#global-centrality&#34;&gt;Global Centrality&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#degree-centrality&#34;&gt;degree centrality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#clossness-centrality&#34;&gt;Clossness centrality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#betweenness-centrality&#34;&gt;Betweenness centrality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#eigenvector-centrality&#34;&gt;Eigenvector centrality&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#other-network-measures&#34;&gt;Other Network Measures&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#clustering&#34;&gt;Clustering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#effective-size&#34;&gt;Effective size&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#k-nearest-neighbors-knn&#34;&gt;K nearest neighbors (KNN)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#core-number&#34;&gt;Core number&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#theatre-attributes&#34;&gt;Theatre attributes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
 
-&lt;p&gt;The parameters for each widget vary. They can be found in the preamble/frontmatter (between the pair of &lt;code&gt;+++&lt;/code&gt;) for each widget installed in the &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;By default, publications will be displayed in a simple list. If you prefer a more detailed list with abstract and image, you can enable the detailed publication list on the homepage by setting &lt;code&gt;list_format = 2&lt;/code&gt; in &lt;code&gt;content/home/publications.md&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;network-measures&#34;&gt;Network Measures&lt;/h1&gt;
 
-&lt;/div&gt;
+&lt;h2 id=&#34;global-centrality&#34;&gt;Global Centrality&lt;/h2&gt;
 
+&lt;h3 id=&#34;degree-centrality&#34;&gt;degree centrality&lt;/h3&gt;
 
-&lt;h2 id=&#34;add-a-widget-to-the-homepage&#34;&gt;Add a widget to the homepage&lt;/h2&gt;
+&lt;p&gt;nx.degree_centrality(G)&lt;/p&gt;
 
-&lt;p&gt;To add a widget manually, copy the relevant widget from &lt;code&gt;themes/academic/exampleSite/content/home/&lt;/code&gt; to your &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;The degree centrality for a node v is the fraction of nodes it is connected to.&lt;/p&gt;
 
-&lt;p&gt;Widget identifiers are set to their respective filenames, so a &lt;code&gt;content/home/about.md&lt;/code&gt; widget can be linked from the navigation bar by setting the relevant URL as &lt;code&gt;&amp;quot;#about&amp;quot;&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;
 
-&lt;p&gt;This means that if you want to use multiple instances of a widget, each widget will be assigned a unique ID based on the filename that you set. You can then use that ID for linking, like in the above example.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;G (graph) – A NetworkX graph.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&#34;using-the-custom-widget&#34;&gt;Using the custom widget&lt;/h2&gt;
+&lt;h3 id=&#34;clossness-centrality&#34;&gt;Clossness centrality&lt;/h3&gt;
 
-&lt;p&gt;You can use the custom widget to create your own home page sections.&lt;/p&gt;
+&lt;p&gt;nx.closeness_centrality(G, distance=None)&lt;/p&gt;
 
-&lt;p&gt;Simply duplicate (copy/paste) and rename the example &lt;em&gt;teaching&lt;/em&gt; file at &lt;code&gt;content/home/teaching.md&lt;/code&gt;. Then edit the section title, weight (refer to &lt;em&gt;Ordering sections&lt;/em&gt; below), and content as desired.&lt;/p&gt;
+&lt;p&gt;Closeness centrality of a node u is the reciprocal of the average shortest path distance to u over all n-1 reachable nodes.&lt;/p&gt;
 
-&lt;p&gt;You may also wish to add a navigation link to the top of the page that points to the new section. This can be achieved by adding something similar to the following lines to your &lt;code&gt;config.toml&lt;/code&gt;, where the URL will consist of the first title word in lowercase:&lt;/p&gt;
+&lt;p&gt;$$C(u) = \frac{n-1}{\sum_{v=1}^{n-1}d(v,u)}$$&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;[[menu.main]]
-    name = &amp;quot;Research&amp;quot;
-    url = &amp;quot;#research&amp;quot;
-    weight = 10
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where d(v, u) is the shortest-path distance between v and u, and n is the number of nodes that can reach u.&lt;/p&gt;
 
-&lt;h2 id=&#34;remove-a-widget-from-the-homepage&#34;&gt;Remove a widget from the homepage&lt;/h2&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;
 
-&lt;p&gt;If you do not require a particular widget, you can simply delete any associated files from the &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (graph) – A NetworkX graph.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;To remove a navigation link from the top of the page, remove the associated &lt;code&gt;[[menu.main]]&lt;/code&gt; entry in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;distance (edge attribute key, optional (default=None)) – Use the specified edge attribute as the edge distance in shortest path calculations&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&#34;ordering-widgets&#34;&gt;Ordering widgets&lt;/h2&gt;
+&lt;h3 id=&#34;betweenness-centrality&#34;&gt;Betweenness centrality&lt;/h3&gt;
 
-&lt;p&gt;The order that the homepage widgets are displayed in is defined by the &lt;code&gt;weight&lt;/code&gt; parameter in each of the files in the &lt;code&gt;content/home/&lt;/code&gt; directory. The widgets are displayed in ascending order of their &lt;code&gt;weight&lt;/code&gt;, so you can simply edit the &lt;code&gt;weight&lt;/code&gt; parameters as desired.&lt;/p&gt;
+&lt;p&gt;nx.betweenness_centrality(G, weight=None)&lt;/p&gt;
+
+&lt;p&gt;Betweenness centrality of a node v is the sum of the fraction of all-pairs shortest paths that pass through v&lt;/p&gt;
+
+&lt;p&gt;$$C_B(v) = \sum_{\substack{s,t \in V}}\frac{\sigma(s,t|v)}{\sigma(s,t)}$$&lt;/p&gt;
+
+&lt;p&gt;where V is the set of nodes, $\sigma(s,t)$ is the number of shortest $(s,t)$ paths, and $\sigma(s,t|v)$ is the number of those paths passing through some node v other than $s,t$. If $s=t$, $\sigma(s,t|v)=1$, and if $v \in s$, $\sigma(s,t|v)$=0&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (graph) – A NetworkX graph.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight (None or string, optional (default=None)) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;eigenvector-centrality&#34;&gt;Eigenvector centrality&lt;/h3&gt;
+
+&lt;p&gt;nx.eigenvector_centrality(G, max_iter=100, weight=None)&lt;/p&gt;
+
+&lt;p&gt;Eigenvector centrality computes the centrality for a node based on the centrality of its neighbors. The eigenvector centrality for node $i$ is&lt;/p&gt;
+
+&lt;p&gt;$$ Ax = \lambda x $$&lt;/p&gt;
+
+&lt;p&gt;where $A$ is the adjacency matrix of the graph G with eigenvalue $\lambda$. By virtue of the Perron–Frobenius theorem, there is a unique and positive solution if $\lambda$ is the largest eigenvalue associated with the eigenvector of the adjacency matrix $A$.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (graph) – A NetworkX graph.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;max_iter (integer, optional (default=100)) – Maximum number of iterations in power method.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight (None or string, optional (default=None)) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;other-network-measures&#34;&gt;Other Network Measures&lt;/h2&gt;
+
+&lt;h3 id=&#34;clustering&#34;&gt;Clustering&lt;/h3&gt;
+
+&lt;p&gt;clustering(G, weight=None)&lt;/p&gt;
+
+&lt;p&gt;or unweighted graphs, the clustering of a node $u$ is the fraction of possible triangles through that node that exist,&lt;/p&gt;
+
+&lt;p&gt;$$ c_u = \frac{2T(u)}{deg(u)(deg(u) - 1)} $$&lt;/p&gt;
+
+&lt;p&gt;where $T(u)$ is the number of triangles through node $u$ and $deg(u)$ is the degree of $u$.&lt;/p&gt;
+
+&lt;p&gt;For weighted graphs, the clustering is defined as the geometric average of the subgraph edge weights,&lt;/p&gt;
+
+&lt;p&gt;$$ c_u = \frac{1}{deg(u)(deg(u) - 1)}\sum_{\substack{uv}}(\hat{w}_{uv}\hat{w}_{uw}\hat{w}_{vw})^3 $$&lt;/p&gt;
+
+&lt;p&gt;The edge weights $\hat{w}_{uv}$ are normalized by the maximum weight in the network $\hat{w}_{uv} = \frac{w_{uv}}{max(w)}$.&lt;/p&gt;
+
+&lt;p&gt;The value of $c_u$ is assigned to 0 if $deg(u) &amp;lt; 2$.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (graph) – A NetworkX graph.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight (string or None, optional (default=None)) – The edge attribute that holds the numerical value used as a weight. If None, then each edge has weight 1.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;effective-size&#34;&gt;Effective size&lt;/h3&gt;
+
+&lt;p&gt;effective_size(G, weight=None)&lt;/p&gt;
+
+&lt;p&gt;The effective size of a node’s ego network is based on the concept of redundancy. A person’s ego network has redundancy to the extent that her contacts are connected to each other as well. The nonredundant part of a person’s relationships it’s the effective size of her ego network&lt;/p&gt;
+
+&lt;p&gt;Refer to section 3.2 in this paper (&lt;a href=&#34;https://pietropanzarasa.files.wordpress.com/2012/05/jsp.pdf&#34; target=&#34;_blank&#34;&gt;latora2013social&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (NetworkX graph) – The graph containing $v$. Directed graphs are treated like undirected graphs when computing neighbors of $v$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight (None or string, optional) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;k-nearest-neighbors-knn&#34;&gt;K nearest neighbors (KNN)&lt;/h3&gt;
+
+&lt;p&gt;k_nearest_neighbors(G, weight=None)&lt;/p&gt;
+
+&lt;p&gt;The average degree connectivity is the average nearest neighbor degree of nodes with degree $k$. For weighted graphs, an analogous measure can be computed using the weighted average neighbors degree defined in this &lt;a href=&#34;http://www.pnas.org/content/101/11/3747.full&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;, for a node $i$, as&lt;/p&gt;
+
+&lt;p&gt;$$ k_{nn,i}^{w} = \frac{1}{s_i}\sum_{\substack{j\in N(i)}} w_{ij}k_j $$&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (NetworkX graph).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight(string or None, optional (default=None)) – The edge attribute that holds the numerical value used as a weight. If None, then each edge has weight 1.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;core-number&#34;&gt;Core number&lt;/h3&gt;
+
+&lt;p&gt;core_number(G)&lt;/p&gt;
+
+&lt;p&gt;Return the core number for each vertex.&lt;/p&gt;
+
+&lt;p&gt;A k-core is a maximal subgraph that contains nodes of degree k or more.&lt;/p&gt;
+
+&lt;p&gt;The core number of a node is the &lt;code&gt;largest value k&lt;/code&gt; of a k-core containing that node.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;G (NetworkX graph) – A graph or directed graph&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;theatre-attributes&#34;&gt;Theatre attributes&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Theatre id&lt;/li&gt;
+&lt;li&gt;Theatre name&lt;/li&gt;
+&lt;li&gt;Funding&lt;/li&gt;
+&lt;li&gt;Number of seats&lt;/li&gt;
+&lt;li&gt;Foundation year&lt;/li&gt;
+&lt;li&gt;Region(Italy/Abroad)&lt;/li&gt;
+&lt;li&gt;Focal&lt;/li&gt;
+&lt;li&gt;Number of single productions&lt;/li&gt;
+&lt;li&gt;Number of co-productions&lt;/li&gt;
+&lt;li&gt;Ratio of co-production&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
