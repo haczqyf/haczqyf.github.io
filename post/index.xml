@@ -7,8 +7,236 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Yifan Qian</copyright>
-    <lastBuildDate>Thu, 04 Jan 2018 19:40:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Performance Network</title>
+      <link>https://haczqyf.github.io/post/performancenetwork/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://haczqyf.github.io/post/performancenetwork/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://bl.ocks.org/haczqyf/raw/7b92ba3d3efa3c00f9fadd7fec9831fa/&#34; target=&#34;_blank&#34;&gt;Interactive visualization for performance network&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Blue nodes represent 1476 performances. The size of ndoes is based on its degree.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Highlighting&lt;/code&gt;: Double-click on a node to fade out all but its immediate neighbours. Double-click to bring them back again.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tooltip&lt;/code&gt;: When we hover over the node or link, this will display the node&amp;rsquo;s or link&amp;rsquo;s measures.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#network-measures&#34;&gt;Network Measures&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#global-centrality&#34;&gt;Global Centrality&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#degree-centrality&#34;&gt;Degree centrality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#clossness-centrality&#34;&gt;Clossness centrality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#betweenness-centrality&#34;&gt;Betweenness centrality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#eigenvector-centrality&#34;&gt;Eigenvector centrality&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#other-network-measures&#34;&gt;Other Network Measures&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#clustering&#34;&gt;Clustering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#effective-size&#34;&gt;Effective size&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#k-nearest-neighbors-knn&#34;&gt;K nearest neighbors(KNN)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#core-number&#34;&gt;Core number&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#performance-attributes&#34;&gt;Performance attributes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#entropy&#34;&gt;Entropy&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#theatre-type-entropy-for-every-performance&#34;&gt;&amp;lsquo;Theatre type entropy&amp;rsquo; for every performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#theatre-type-region-for-every-performance&#34;&gt;&amp;lsquo;Theatre type region&amp;rsquo; for every performance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h1 id=&#34;network-measures&#34;&gt;Network Measures&lt;/h1&gt;
+
+&lt;h2 id=&#34;global-centrality&#34;&gt;Global Centrality&lt;/h2&gt;
+
+&lt;h3 id=&#34;degree-centrality&#34;&gt;Degree centrality&lt;/h3&gt;
+
+&lt;p&gt;nx.degree_centrality(G)&lt;/p&gt;
+
+&lt;p&gt;The degree centrality for a node v is the fraction of nodes it is connected to.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;G (graph) – A NetworkX graph.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;clossness-centrality&#34;&gt;Clossness centrality&lt;/h3&gt;
+
+&lt;p&gt;nx.closeness_centrality(G, distance=None)&lt;/p&gt;
+
+&lt;p&gt;Closeness centrality of a node u is the reciprocal of the average shortest path distance to u over all n-1 reachable nodes.&lt;/p&gt;
+
+&lt;p&gt;$$C(u) = \frac{n-1}{\sum_{v=1}^{n-1}d(v,u)}$$&lt;/p&gt;
+
+&lt;p&gt;where d(v, u) is the shortest-path distance between v and u, and n is the number of nodes that can reach u.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (graph) – A NetworkX graph.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;distance (edge attribute key, optional (default=None)) – Use the specified edge attribute as the edge distance in shortest path calculations&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;betweenness-centrality&#34;&gt;Betweenness centrality&lt;/h3&gt;
+
+&lt;p&gt;nx.betweenness_centrality(G, weight=None)&lt;/p&gt;
+
+&lt;p&gt;Betweenness centrality of a node v is the sum of the fraction of all-pairs shortest paths that pass through v&lt;/p&gt;
+
+&lt;p&gt;$$C_B(v) = \sum_{\substack{s,t \in V}}\frac{\sigma(s,t|v)}{\sigma(s,t)}$$&lt;/p&gt;
+
+&lt;p&gt;where V is the set of nodes, $\sigma(s,t)$ is the number of shortest $(s,t)$ paths, and $\sigma(s,t|v)$ is the number of those paths passing through some node v other than $s,t$. If $s=t$, $\sigma(s,t|v)=1$, and if $v \in s$, $\sigma(s,t|v)$=0&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (graph) – A NetworkX graph.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight (None or string, optional (default=None)) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;eigenvector-centrality&#34;&gt;Eigenvector centrality&lt;/h3&gt;
+
+&lt;p&gt;nx.eigenvector_centrality(G, max_iter=100, weight=None)&lt;/p&gt;
+
+&lt;p&gt;Eigenvector centrality computes the centrality for a node based on the centrality of its neighbors. The eigenvector centrality for node $i$ is&lt;/p&gt;
+
+&lt;p&gt;$$ Ax = \lambda x $$&lt;/p&gt;
+
+&lt;p&gt;where $A$ is the adjacency matrix of the graph G with eigenvalue $\lambda$. By virtue of the Perron–Frobenius theorem, there is a unique and positive solution if $\lambda$ is the largest eigenvalue associated with the eigenvector of the adjacency matrix $A$.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (graph) – A NetworkX graph.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;max_iter (integer, optional (default=100)) – Maximum number of iterations in power method.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight (None or string, optional (default=None)) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;other-network-measures&#34;&gt;Other Network Measures&lt;/h2&gt;
+
+&lt;h3 id=&#34;clustering&#34;&gt;Clustering&lt;/h3&gt;
+
+&lt;p&gt;clustering(G, weight=None)&lt;/p&gt;
+
+&lt;p&gt;or unweighted graphs, the clustering of a node $u$ is the fraction of possible triangles through that node that exist,&lt;/p&gt;
+
+&lt;p&gt;$$ c_u = \frac{2T(u)}{deg(u)(deg(u) - 1)} $$&lt;/p&gt;
+
+&lt;p&gt;where $T(u)$ is the number of triangles through node $u$ and $deg(u)$ is the degree of $u$.&lt;/p&gt;
+
+&lt;p&gt;For weighted graphs, the clustering is defined as the geometric average of the subgraph edge weights,&lt;/p&gt;
+
+&lt;p&gt;$$ c_u = \frac{1}{deg(u)(deg(u) - 1)}\sum_{\substack{uv}}(\hat{w}_{uv}\hat{w}_{uw}\hat{w}_{vw})^3 $$&lt;/p&gt;
+
+&lt;p&gt;The edge weights $\hat{w}_{uv}$ are normalized by the maximum weight in the network $\hat{w}_{uv} = \frac{w_{uv}}{max(w)}$.&lt;/p&gt;
+
+&lt;p&gt;The value of $c_u$ is assigned to 0 if $deg(u) &amp;lt; 2$.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (graph) – A NetworkX graph.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight (string or None, optional (default=None)) – The edge attribute that holds the numerical value used as a weight. If None, then each edge has weight 1.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;effective-size&#34;&gt;Effective size&lt;/h3&gt;
+
+&lt;p&gt;effective_size(G, weight=None)&lt;/p&gt;
+
+&lt;p&gt;The effective size of a node’s ego network is based on the concept of redundancy. A person’s ego network has redundancy to the extent that her contacts are connected to each other as well. The nonredundant part of a person’s relationships it’s the effective size of her ego network&lt;/p&gt;
+
+&lt;p&gt;Refer to section 3.2 in this &lt;a href=&#34;https://pietropanzarasa.files.wordpress.com/2012/05/jsp.pdf&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (NetworkX graph) – The graph containing $v$. Directed graphs are treated like undirected graphs when computing neighbors of $v$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight (None or string, optional) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;k-nearest-neighbors-knn&#34;&gt;K nearest neighbors(KNN)&lt;/h3&gt;
+
+&lt;p&gt;k_nearest_neighbors(G, weight=None)&lt;/p&gt;
+
+&lt;p&gt;The average degree connectivity is the average nearest neighbor degree of nodes with degree $k$. For weighted graphs, an analogous measure can be computed using the weighted average neighbors degree defined in this &lt;a href=&#34;http://www.pnas.org/content/101/11/3747.full&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;, for a node $i$, as&lt;/p&gt;
+
+&lt;p&gt;$$ k_{nn,i}^{w} = \frac{1}{s_i}\sum_{\substack{j\in N(i)}} w_{ij}k_j $$&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;G (NetworkX graph).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;weight(string or None, optional (default=None)) – The edge attribute that holds the numerical value used as a weight. If None, then each edge has weight 1.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;core-number&#34;&gt;Core number&lt;/h3&gt;
+
+&lt;p&gt;core_number(G)&lt;/p&gt;
+
+&lt;p&gt;Return the core number for each vertex.&lt;/p&gt;
+
+&lt;p&gt;A k-core is a maximal subgraph that contains nodes of degree k or more.&lt;/p&gt;
+
+&lt;p&gt;The core number of a node is the largest value k of a k-core containing that node.&lt;/p&gt;
+
+&lt;p&gt;Parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;G (NetworkX graph) – A graph or directed graph&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;performance-attributes&#34;&gt;Performance attributes&lt;/h1&gt;
+
+&lt;h2 id=&#34;entropy&#34;&gt;Entropy&lt;/h2&gt;
+
+&lt;h3 id=&#34;theatre-type-entropy-for-every-performance&#34;&gt;&amp;lsquo;Theatre type entropy&amp;rsquo; for every performance&lt;/h3&gt;
+
+&lt;p&gt;The entropy can explicitly be written as:&lt;/p&gt;
+
+&lt;p&gt;$$ H(X) = \sum_{i=1}^{n} P(x_i)I(x_i) = - \sum_{i=1}^{n} {P(x_i) * log_b{P(x_i)}} $$&lt;/p&gt;
+
+&lt;p&gt;where $b$ is the base of the logarithm used. Common values of $b$ are 2, Euler&amp;rsquo;s number $e$, and 10, and the corresponding units of entropy are the bits for $b$ = 2, nats for $b$ = $e$, and bans for $b$ = 10. $P(x_i)$ is the probability distribution of theatre type.&lt;/p&gt;
+
+&lt;h3 id=&#34;theatre-type-region-for-every-performance&#34;&gt;&amp;lsquo;Theatre type region&amp;rsquo; for every performance&lt;/h3&gt;
+
+&lt;p&gt;The entropy can explicitly be written as:&lt;/p&gt;
+
+&lt;p&gt;$$ H(X) = \sum_{i=1}^{n} P(x_i)I(x_i) = - \sum_{i=1}^{n} {P(x_i) * log_b{P(x_i)}} $$&lt;/p&gt;
+
+&lt;p&gt;where $b$ is the base of the logarithm used. Common values of $b$ are 2, Euler&amp;rsquo;s number $e$, and 10, and the corresponding units of entropy are the bits for $b$ = 2, nats for $b$ = $e$, and bans for $b$ = 10. $P(x_i)$ is the probability distribution of theatre region.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Performance id&lt;/li&gt;
+&lt;li&gt;Performance name&lt;/li&gt;
+&lt;li&gt;Performance genre&lt;/li&gt;
+&lt;li&gt;Type of production&lt;/li&gt;
+&lt;li&gt;Number of theatres&lt;/li&gt;
+&lt;li&gt;Performance innovation&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Theatre Network</title>

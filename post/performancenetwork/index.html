@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.31" />
+  <meta name="author" content="Yifan Qian">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="Interactive visualization for performance network
+Blue nodes represent 1476 performances. The size of ndoes is based on its degree.
+ Highlighting: Double-click on a node to fade out all but its immediate neighbours. Double-click to bring them back again. Tooltip: When we hover over the node or link, this will display the node&rsquo;s or link&rsquo;s measures.  Table of Contents  Network Measures  Global Centrality  Degree centrality Clossness centrality Betweenness centrality Eigenvector centrality  Other Network Measures  Clustering Effective size K nearest neighbors(KNN) Core number   Performance attributes  Entropy  &lsquo;Theatre type entropy&rsquo; for every performance &lsquo;Theatre type region&rsquo; for every performance     Network Measures Global Centrality Degree centrality nx.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://haczqyf.github.io/post/performancenetwork/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-111984832-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="https://haczqyf.github.io/index.xml" type="application/rss+xml" title="Yifan Qian">
+  <link rel="feed" href="https://haczqyf.github.io/index.xml" type="application/rss+xml" title="Yifan Qian">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://haczqyf.github.io/post/performancenetwork/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@https://twitter.com/qian_yifan">
+  <meta property="twitter:creator" content="@https://twitter.com/qian_yifan">
+  
+  <meta property="og:site_name" content="Yifan Qian">
+  <meta property="og:url" content="https://haczqyf.github.io/post/performancenetwork/">
+  <meta property="og:title" content="Performance Network | Yifan Qian">
+  <meta property="og:description" content="Interactive visualization for performance network
+Blue nodes represent 1476 performances. The size of ndoes is based on its degree.
+ Highlighting: Double-click on a node to fade out all but its immediate neighbours. Double-click to bring them back again. Tooltip: When we hover over the node or link, this will display the node&rsquo;s or link&rsquo;s measures.  Table of Contents  Network Measures  Global Centrality  Degree centrality Clossness centrality Betweenness centrality Eigenvector centrality  Other Network Measures  Clustering Effective size K nearest neighbors(KNN) Core number   Performance attributes  Entropy  &lsquo;Theatre type entropy&rsquo; for every performance &lsquo;Theatre type region&rsquo; for every performance     Network Measures Global Centrality Degree centrality nx.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-01-07T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-01-07T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>Performance Network | Yifan Qian</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Yifan Qian</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">Performance Network</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-01-07 00:00:00 &#43;0000 GMT" itemprop="datePublished dateModified">
+      Jan 7, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Yifan Qian">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="https://haczqyf.github.io/post/performancenetwork/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Performance%20Network&amp;url=https%3a%2f%2fhaczqyf.github.io%2fpost%2fperformancenetwork%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fhaczqyf.github.io%2fpost%2fperformancenetwork%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhaczqyf.github.io%2fpost%2fperformancenetwork%2f&amp;title=Performance%20Network"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fhaczqyf.github.io%2fpost%2fperformancenetwork%2f&amp;title=Performance%20Network"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Performance%20Network&amp;body=https%3a%2f%2fhaczqyf.github.io%2fpost%2fperformancenetwork%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        
+
+<p><a href="http://bl.ocks.org/haczqyf/raw/7b92ba3d3efa3c00f9fadd7fec9831fa/" target="_blank">Interactive visualization for performance network</a></p>
+
+<p>Blue nodes represent 1476 performances. The size of ndoes is based on its degree.</p>
+
+<ul>
+<li><code>Highlighting</code>: Double-click on a node to fade out all but its immediate neighbours. Double-click to bring them back again.</li>
+<li><code>Tooltip</code>: When we hover over the node or link, this will display the node&rsquo;s or link&rsquo;s measures.</li>
+</ul>
+
+<h2>Table of Contents</h2>
+<nav id="TableOfContents">
+<ul>
+<li><a href="#network-measures">Network Measures</a>
+<ul>
+<li><a href="#global-centrality">Global Centrality</a>
+<ul>
+<li><a href="#degree-centrality">Degree centrality</a></li>
+<li><a href="#clossness-centrality">Clossness centrality</a></li>
+<li><a href="#betweenness-centrality">Betweenness centrality</a></li>
+<li><a href="#eigenvector-centrality">Eigenvector centrality</a></li>
+</ul></li>
+<li><a href="#other-network-measures">Other Network Measures</a>
+<ul>
+<li><a href="#clustering">Clustering</a></li>
+<li><a href="#effective-size">Effective size</a></li>
+<li><a href="#k-nearest-neighbors-knn">K nearest neighbors(KNN)</a></li>
+<li><a href="#core-number">Core number</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#performance-attributes">Performance attributes</a>
+<ul>
+<li><a href="#entropy">Entropy</a>
+<ul>
+<li><a href="#theatre-type-entropy-for-every-performance">&lsquo;Theatre type entropy&rsquo; for every performance</a></li>
+<li><a href="#theatre-type-region-for-every-performance">&lsquo;Theatre type region&rsquo; for every performance</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+
+<h1 id="network-measures">Network Measures</h1>
+
+<h2 id="global-centrality">Global Centrality</h2>
+
+<h3 id="degree-centrality">Degree centrality</h3>
+
+<p>nx.degree_centrality(G)</p>
+
+<p>The degree centrality for a node v is the fraction of nodes it is connected to.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li>G (graph) – A NetworkX graph.</li>
+</ul>
+
+<h3 id="clossness-centrality">Clossness centrality</h3>
+
+<p>nx.closeness_centrality(G, distance=None)</p>
+
+<p>Closeness centrality of a node u is the reciprocal of the average shortest path distance to u over all n-1 reachable nodes.</p>
+
+<p>$$C(u) = \frac{n-1}{\sum_{v=1}^{n-1}d(v,u)}$$</p>
+
+<p>where d(v, u) is the shortest-path distance between v and u, and n is the number of nodes that can reach u.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li><p>G (graph) – A NetworkX graph.</p></li>
+
+<li><p>distance (edge attribute key, optional (default=None)) – Use the specified edge attribute as the edge distance in shortest path calculations</p></li>
+</ul>
+
+<h3 id="betweenness-centrality">Betweenness centrality</h3>
+
+<p>nx.betweenness_centrality(G, weight=None)</p>
+
+<p>Betweenness centrality of a node v is the sum of the fraction of all-pairs shortest paths that pass through v</p>
+
+<p>$$C_B(v) = \sum_{\substack{s,t \in V}}\frac{\sigma(s,t|v)}{\sigma(s,t)}$$</p>
+
+<p>where V is the set of nodes, $\sigma(s,t)$ is the number of shortest $(s,t)$ paths, and $\sigma(s,t|v)$ is the number of those paths passing through some node v other than $s,t$. If $s=t$, $\sigma(s,t|v)=1$, and if $v \in s$, $\sigma(s,t|v)$=0</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li><p>G (graph) – A NetworkX graph.</p></li>
+
+<li><p>weight (None or string, optional (default=None)) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.</p></li>
+</ul>
+
+<h3 id="eigenvector-centrality">Eigenvector centrality</h3>
+
+<p>nx.eigenvector_centrality(G, max_iter=100, weight=None)</p>
+
+<p>Eigenvector centrality computes the centrality for a node based on the centrality of its neighbors. The eigenvector centrality for node $i$ is</p>
+
+<p>$$ Ax = \lambda x $$</p>
+
+<p>where $A$ is the adjacency matrix of the graph G with eigenvalue $\lambda$. By virtue of the Perron–Frobenius theorem, there is a unique and positive solution if $\lambda$ is the largest eigenvalue associated with the eigenvector of the adjacency matrix $A$.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li><p>G (graph) – A NetworkX graph.</p></li>
+
+<li><p>max_iter (integer, optional (default=100)) – Maximum number of iterations in power method.</p></li>
+
+<li><p>weight (None or string, optional (default=None)) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.</p></li>
+</ul>
+
+<h2 id="other-network-measures">Other Network Measures</h2>
+
+<h3 id="clustering">Clustering</h3>
+
+<p>clustering(G, weight=None)</p>
+
+<p>or unweighted graphs, the clustering of a node $u$ is the fraction of possible triangles through that node that exist,</p>
+
+<p>$$ c_u = \frac{2T(u)}{deg(u)(deg(u) - 1)} $$</p>
+
+<p>where $T(u)$ is the number of triangles through node $u$ and $deg(u)$ is the degree of $u$.</p>
+
+<p>For weighted graphs, the clustering is defined as the geometric average of the subgraph edge weights,</p>
+
+<p>$$ c_u = \frac{1}{deg(u)(deg(u) - 1)}\sum_{\substack{uv}}(\hat{w}_{uv}\hat{w}_{uw}\hat{w}_{vw})^3 $$</p>
+
+<p>The edge weights $\hat{w}_{uv}$ are normalized by the maximum weight in the network $\hat{w}_{uv} = \frac{w_{uv}}{max(w)}$.</p>
+
+<p>The value of $c_u$ is assigned to 0 if $deg(u) &lt; 2$.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li><p>G (graph) – A NetworkX graph.</p></li>
+
+<li><p>weight (string or None, optional (default=None)) – The edge attribute that holds the numerical value used as a weight. If None, then each edge has weight 1.</p></li>
+</ul>
+
+<h3 id="effective-size">Effective size</h3>
+
+<p>effective_size(G, weight=None)</p>
+
+<p>The effective size of a node’s ego network is based on the concept of redundancy. A person’s ego network has redundancy to the extent that her contacts are connected to each other as well. The nonredundant part of a person’s relationships it’s the effective size of her ego network</p>
+
+<p>Refer to section 3.2 in this <a href="https://pietropanzarasa.files.wordpress.com/2012/05/jsp.pdf" target="_blank">paper</a>.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li><p>G (NetworkX graph) – The graph containing $v$. Directed graphs are treated like undirected graphs when computing neighbors of $v$.</p></li>
+
+<li><p>weight (None or string, optional) – If None, all edge weights are considered equal. Otherwise holds the name of the edge attribute used as weight.</p></li>
+</ul>
+
+<h3 id="k-nearest-neighbors-knn">K nearest neighbors(KNN)</h3>
+
+<p>k_nearest_neighbors(G, weight=None)</p>
+
+<p>The average degree connectivity is the average nearest neighbor degree of nodes with degree $k$. For weighted graphs, an analogous measure can be computed using the weighted average neighbors degree defined in this <a href="http://www.pnas.org/content/101/11/3747.full" target="_blank">paper</a>, for a node $i$, as</p>
+
+<p>$$ k_{nn,i}^{w} = \frac{1}{s_i}\sum_{\substack{j\in N(i)}} w_{ij}k_j $$</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li><p>G (NetworkX graph).</p></li>
+
+<li><p>weight(string or None, optional (default=None)) – The edge attribute that holds the numerical value used as a weight. If None, then each edge has weight 1.</p></li>
+</ul>
+
+<h3 id="core-number">Core number</h3>
+
+<p>core_number(G)</p>
+
+<p>Return the core number for each vertex.</p>
+
+<p>A k-core is a maximal subgraph that contains nodes of degree k or more.</p>
+
+<p>The core number of a node is the largest value k of a k-core containing that node.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li>G (NetworkX graph) – A graph or directed graph</li>
+</ul>
+
+<h1 id="performance-attributes">Performance attributes</h1>
+
+<h2 id="entropy">Entropy</h2>
+
+<h3 id="theatre-type-entropy-for-every-performance">&lsquo;Theatre type entropy&rsquo; for every performance</h3>
+
+<p>The entropy can explicitly be written as:</p>
+
+<p>$$ H(X) = \sum_{i=1}^{n} P(x_i)I(x_i) = - \sum_{i=1}^{n} {P(x_i) * log_b{P(x_i)}} $$</p>
+
+<p>where $b$ is the base of the logarithm used. Common values of $b$ are 2, Euler&rsquo;s number $e$, and 10, and the corresponding units of entropy are the bits for $b$ = 2, nats for $b$ = $e$, and bans for $b$ = 10. $P(x_i)$ is the probability distribution of theatre type.</p>
+
+<h3 id="theatre-type-region-for-every-performance">&lsquo;Theatre type region&rsquo; for every performance</h3>
+
+<p>The entropy can explicitly be written as:</p>
+
+<p>$$ H(X) = \sum_{i=1}^{n} P(x_i)I(x_i) = - \sum_{i=1}^{n} {P(x_i) * log_b{P(x_i)}} $$</p>
+
+<p>where $b$ is the base of the logarithm used. Common values of $b$ are 2, Euler&rsquo;s number $e$, and 10, and the corresponding units of entropy are the bits for $b$ = 2, nats for $b$ = $e$, and bans for $b$ = 10. $P(x_i)$ is the probability distribution of theatre region.</p>
+
+<ul>
+<li>Performance id</li>
+<li>Performance name</li>
+<li>Performance genre</li>
+<li>Type of production</li>
+<li>Number of theatres</li>
+<li>Performance innovation</li>
+</ul>
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/collaboration-network">collaboration network</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/theatrenetwork/">Theatre Network</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "qianyifan" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Yifan Qian &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//qianyifan.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+
