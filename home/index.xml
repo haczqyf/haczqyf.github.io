@@ -6,7 +6,7 @@
     <description>Recent content in Homes on Yifan Qian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <copyright>&amp;copy; 2018 Yifan Qian</copyright>
+    <copyright>&amp;copy; 2019 Yifan Qian</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://haczqyf.github.io/home/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://haczqyf.github.io/home/about/</guid>
-      <description>Short Bio I am currently a PhD student in Queen Mary University of London, United Kingdom. My research is broadly concerned with computational social science and combines theories and methods from network science, sociology, machine learning and data science. The general goal of my work is to better understand the structure, functioning and consequences of complex large-scale networks across a number of empirical domains including citation networks, social networks and collaboration networks.</description>
+      <description>Short Bio I am currently a PhD student at the School of Business and Management in Queen Mary University of London, United Kingdom. My research is broadly concerned with computational social science and combines theories and methods from network science, sociology, machine learning and data science. The general goal of my work is to better understand the structure, functioning and consequences of complex large-scale networks across a number of empirical domains including citation networks, social networks and collaboration networks.</description>
     </item>
     
     <item>
@@ -27,10 +27,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://haczqyf.github.io/home/news/</guid>
-      <description>Oct. 2018: I delivered a lightning talk on geometric deep learning with graphs at 2nd UK Network Science workshop. See my slides here.
- Sep. 2018: I started my second year of PhD study!
- Jul. 2018: I presented our poster on geometric deep learning with graphs at IC2S2 2018. See our poster here.
- Jun. 2018: I delivered a contributed talk on geometric deep learning with graphs at NetSci18 Satellite on Machine Learning in Network Science.</description>
+      <description>Lightning talk: Geometric deep learning with graphs at 2nd UK Network Science Workshop, 26 October 2018, London, UK. See my slides here. Poster: Geometric deep learning with graphs at IC2S2 2018, 13-15 July 2018, Evanston, Illinois, US. See my poster here. Poster: Geometric deep learning with graphs at NetSci 2018, 13-15 June, 2018, Paris, France. See my poster here. Contributed talk: Geometric deep learning with graphs at NetSci 2018 Satellite on Machine Learning in Network Science, 11-12 June, 2018, Paris, France.</description>
     </item>
     
     <item>
@@ -43,12 +40,12 @@
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>https://haczqyf.github.io/home/publications/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 +0100</pubDate>
+      <title>Ongoing work</title>
+      <link>https://haczqyf.github.io/home/ongoingwork/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/home/publications/</guid>
-      <description></description>
+      <guid>https://haczqyf.github.io/home/ongoingwork/</guid>
+      <description> [Graph neural networks] Linking the classification performance of Graph Convolutional Networks with the alignment of graphs and features. [Social capital] Intra- and inter-brokerage in social networks. [Social capital] The structural foundations of creativity: A network-based study of co-productions among Italian theaters. [Geo-social networks] Measuring the social diversity of cities in mobility and scientific collaboration networks.  </description>
     </item>
     
     <item>
@@ -67,20 +64,20 @@ Pedro Martins
     </item>
     
     <item>
+      <title>Publications</title>
+      <link>https://haczqyf.github.io/home/publications/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://haczqyf.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Talks</title>
       <link>https://haczqyf.github.io/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://haczqyf.github.io/home/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://haczqyf.github.io/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://haczqyf.github.io/home/contact/</guid>
       <description></description>
     </item>
     
@@ -94,22 +91,31 @@ Pedro Martins
     </item>
     
     <item>
+      <title>Teaching</title>
+      <link>https://haczqyf.github.io/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://haczqyf.github.io/home/teaching/</guid>
+      <description>I am teaching associate for the following courses:
+ BUS346: Social Network Analysis (QMUL, 2019)  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://haczqyf.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://haczqyf.github.io/home/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>https://haczqyf.github.io/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://haczqyf.github.io/home/projects/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>https://haczqyf.github.io/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://haczqyf.github.io/home/teaching/</guid>
-      <description>I am a teaching associate for the following courses:
- BUS346: Social Network Analysis (QMUL, 2019)  </description>
     </item>
     
     <item>
