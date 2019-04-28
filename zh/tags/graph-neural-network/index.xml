@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graph Neural Network on Yifan Qian</title>
-    <link>https://haczqyf.github.io/zh/tags/graph-neural-network/</link>
+    <link>https://yifanqian.com/zh/tags/graph-neural-network/</link>
     <description>Recent content in Graph Neural Network on Yifan Qian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2019 Yifan Qian</copyright>
     <lastBuildDate>Fri, 01 Mar 2019 11:50:00 +0000</lastBuildDate>
     
-	<atom:link href="https://haczqyf.github.io/zh/tags/graph-neural-network/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yifanqian.com/zh/tags/graph-neural-network/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linking the classification performance of Graph Convolutional Networks</title>
-      <link>https://haczqyf.github.io/zh/talk/datanatives_2019_gcn/</link>
+      <link>https://yifanqian.com/zh/talk/datanatives_2019_gcn/</link>
       <pubDate>Fri, 01 Mar 2019 11:50:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/talk/datanatives_2019_gcn/</guid>
+      <guid>https://yifanqian.com/zh/talk/datanatives_2019_gcn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linking the classification performance of Graph Convolutional Networks</title>
-      <link>https://haczqyf.github.io/zh/talk/uknetsciworkshop_2018_gcn/</link>
+      <link>https://yifanqian.com/zh/talk/uknetsciworkshop_2018_gcn/</link>
       <pubDate>Fri, 26 Oct 2018 15:05:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/talk/uknetsciworkshop_2018_gcn/</guid>
+      <guid>https://yifanqian.com/zh/talk/uknetsciworkshop_2018_gcn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linking the classification performance of Graph Convolutional Networks</title>
-      <link>https://haczqyf.github.io/zh/talk/netsci_mlns_2018_gcn/</link>
+      <link>https://yifanqian.com/zh/talk/netsci_mlns_2018_gcn/</link>
       <pubDate>Tue, 12 Jun 2018 09:00:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/talk/netsci_mlns_2018_gcn/</guid>
+      <guid>https://yifanqian.com/zh/talk/netsci_mlns_2018_gcn/</guid>
       <description></description>
     </item>
     

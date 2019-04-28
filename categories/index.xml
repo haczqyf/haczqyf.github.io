@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Yifan Qian</title>
-    <link>https://haczqyf.github.io/categories/</link>
+    <link>https://yifanqian.com/categories/</link>
     <description>Recent content in Categories on Yifan Qian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <copyright>&amp;copy; 2019 Yifan Qian</copyright>
     
-	<atom:link href="https://haczqyf.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yifanqian.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

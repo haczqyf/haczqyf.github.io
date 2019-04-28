@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yifan Qian</title>
-    <link>https://haczqyf.github.io/zh/authors/yifan-qian/</link>
+    <link>https://yifanqian.com/zh/authors/yifan-qian/</link>
     <description>Recent content on Yifan Qian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2019 Yifan Qian</copyright>
     <lastBuildDate>Sat, 20 Jul 2019 11:50:00 +0100</lastBuildDate>
     
-	<atom:link href="https://haczqyf.github.io/zh/authors/yifan-qian/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yifanqian.com/zh/authors/yifan-qian/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Measuring the Social Diversity of Cities in Mobility and Scientific Collaboration Networks</title>
-      <link>https://haczqyf.github.io/zh/talk/ic2s2_2019_geosocionet/</link>
+      <link>https://yifanqian.com/zh/talk/ic2s2_2019_geosocionet/</link>
       <pubDate>Sat, 20 Jul 2019 11:50:00 +0100</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/talk/ic2s2_2019_geosocionet/</guid>
+      <guid>https://yifanqian.com/zh/talk/ic2s2_2019_geosocionet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linking the classification performance of Graph Convolutional Networks</title>
-      <link>https://haczqyf.github.io/zh/talk/datanatives_2019_gcn/</link>
+      <link>https://yifanqian.com/zh/talk/datanatives_2019_gcn/</link>
       <pubDate>Fri, 01 Mar 2019 11:50:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/talk/datanatives_2019_gcn/</guid>
+      <guid>https://yifanqian.com/zh/talk/datanatives_2019_gcn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linking the classification performance of Graph Convolutional Networks</title>
-      <link>https://haczqyf.github.io/zh/talk/uknetsciworkshop_2018_gcn/</link>
+      <link>https://yifanqian.com/zh/talk/uknetsciworkshop_2018_gcn/</link>
       <pubDate>Fri, 26 Oct 2018 15:05:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/talk/uknetsciworkshop_2018_gcn/</guid>
+      <guid>https://yifanqian.com/zh/talk/uknetsciworkshop_2018_gcn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Geometric deep learning and node classification: An application of Graph Convolutional Networks to citation networks</title>
-      <link>https://haczqyf.github.io/zh/publication/qian-2018-iccss/</link>
+      <link>https://yifanqian.com/zh/publication/qian-2018-iccss/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0100</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/publication/qian-2018-iccss/</guid>
+      <guid>https://yifanqian.com/zh/publication/qian-2018-iccss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Geometric deep learning and node classification: An application of Graph Convolutional Networks to citation networks</title>
-      <link>https://haczqyf.github.io/zh/publication/qian-2018-netsci/</link>
+      <link>https://yifanqian.com/zh/publication/qian-2018-netsci/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0100</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/publication/qian-2018-netsci/</guid>
+      <guid>https://yifanqian.com/zh/publication/qian-2018-netsci/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linking the classification performance of Graph Convolutional Networks</title>
-      <link>https://haczqyf.github.io/zh/talk/netsci_mlns_2018_gcn/</link>
+      <link>https://yifanqian.com/zh/talk/netsci_mlns_2018_gcn/</link>
       <pubDate>Tue, 12 Jun 2018 09:00:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/talk/netsci_mlns_2018_gcn/</guid>
+      <guid>https://yifanqian.com/zh/talk/netsci_mlns_2018_gcn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Geometric deep learning with graphs: Linking the classification performance of Graph Convolutional Networks with the alignment of graphs and features</title>
-      <link>https://haczqyf.github.io/zh/publication/qian-2018-netscimlns/</link>
+      <link>https://yifanqian.com/zh/publication/qian-2018-netscimlns/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0100</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/publication/qian-2018-netscimlns/</guid>
+      <guid>https://yifanqian.com/zh/publication/qian-2018-netscimlns/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Citation regression analysis of computer science publications in different ranking categories and subfields</title>
-      <link>https://haczqyf.github.io/zh/publication/qian2017citation/</link>
+      <link>https://yifanqian.com/zh/publication/qian2017citation/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/publication/qian2017citation/</guid>
+      <guid>https://yifanqian.com/zh/publication/qian2017citation/</guid>
       <description></description>
     </item>
     

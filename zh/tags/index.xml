@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Yifan Qian</title>
-    <link>https://haczqyf.github.io/zh/tags/</link>
+    <link>https://yifanqian.com/zh/tags/</link>
     <description>Recent content in Tags on Yifan Qian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2019 Yifan Qian</copyright>
     <lastBuildDate>Sat, 20 Jul 2019 11:50:00 +0100</lastBuildDate>
     
-	<atom:link href="https://haczqyf.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yifanqian.com/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Geo-social Network</title>
-      <link>https://haczqyf.github.io/zh/tags/geo-social-network/</link>
+      <link>https://yifanqian.com/zh/tags/geo-social-network/</link>
       <pubDate>Sat, 20 Jul 2019 11:50:00 +0100</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/tags/geo-social-network/</guid>
+      <guid>https://yifanqian.com/zh/tags/geo-social-network/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Social Diversity</title>
-      <link>https://haczqyf.github.io/zh/tags/social-diversity/</link>
+      <link>https://yifanqian.com/zh/tags/social-diversity/</link>
       <pubDate>Sat, 20 Jul 2019 11:50:00 +0100</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/tags/social-diversity/</guid>
+      <guid>https://yifanqian.com/zh/tags/social-diversity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>https://haczqyf.github.io/zh/tags/deep-learning/</link>
+      <link>https://yifanqian.com/zh/tags/deep-learning/</link>
       <pubDate>Fri, 01 Mar 2019 11:50:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/tags/deep-learning/</guid>
+      <guid>https://yifanqian.com/zh/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Graph Neural Network</title>
-      <link>https://haczqyf.github.io/zh/tags/graph-neural-network/</link>
+      <link>https://yifanqian.com/zh/tags/graph-neural-network/</link>
       <pubDate>Fri, 01 Mar 2019 11:50:00 +0000</pubDate>
       
-      <guid>https://haczqyf.github.io/zh/tags/graph-neural-network/</guid>
+      <guid>https://yifanqian.com/zh/tags/graph-neural-network/</guid>
       <description></description>
     </item>
     
