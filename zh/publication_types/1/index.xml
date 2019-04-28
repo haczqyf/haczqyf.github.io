@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Yifan Qian</title>
+    <link>https://haczqyf.github.io/zh/publication_types/1/</link>
+    <description>Recent content in 1 on Yifan Qian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2019 Yifan Qian</copyright>
+    <lastBuildDate>Sat, 14 Jul 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://haczqyf.github.io/zh/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Geometric deep learning and node classification: An application of Graph Convolutional Networks to citation networks</title>
+      <link>https://haczqyf.github.io/zh/publication/qian-2018-iccss/</link>
+      <pubDate>Sat, 14 Jul 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://haczqyf.github.io/zh/publication/qian-2018-iccss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geometric deep learning and node classification: An application of Graph Convolutional Networks to citation networks</title>
+      <link>https://haczqyf.github.io/zh/publication/qian-2018-netsci/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://haczqyf.github.io/zh/publication/qian-2018-netsci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geometric deep learning with graphs: Linking the classification performance of Graph Convolutional Networks with the alignment of graphs and features</title>
+      <link>https://haczqyf.github.io/zh/publication/qian-2018-netscimlns/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://haczqyf.github.io/zh/publication/qian-2018-netscimlns/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

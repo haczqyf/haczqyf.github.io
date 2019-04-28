@@ -7,32 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <copyright>&amp;copy; 2019 Yifan Qian</copyright>
-    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://haczqyf.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Performance Network</title>
-      <link>https://haczqyf.github.io/post/performancenetwork/</link>
-      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://haczqyf.github.io/post/performancenetwork/</guid>
-      <description>Interactive visualization for performance network
-Blue nodes represent 1476 performances. The size of ndoes is based on its degree.
- Highlighting: Double-click on a node to fade out all but its immediate neighbours. Double-click to bring them back again. Tooltip: When we hover over the node or link, this will display the node&amp;rsquo;s or link&amp;rsquo;s measures.  Table of Contents  Network Measures  Global Centrality  Degree centrality Clossness centrality Betweenness centrality Eigenvector centrality  Other Network Measures  Clustering Effective size K nearest neighbors(KNN) Core number   Performance attributes  Entropy  &amp;lsquo;Theatre type entropy&amp;rsquo; for every performance &amp;lsquo;Theatre type region&amp;rsquo; for every performance     Network Measures Global Centrality Degree centrality nx.</description>
-    </item>
-    
-    <item>
-      <title>Theatre Network</title>
-      <link>https://haczqyf.github.io/post/theatrenetwork/</link>
-      <pubDate>Thu, 04 Jan 2018 19:40:27 +0000</pubDate>
-      
-      <guid>https://haczqyf.github.io/post/theatrenetwork/</guid>
-      <description>Interactive visualization for theatre network
-Blue nodes represent 210 focal theatres, and orange nodes represent 630 non-focal theatres. The size of ndoes is based on its degree.
- Highlighting: Double-click on a node to fade out all but its immediate neighbours. Double-click to bring them back again. Tooltip: When we hover over the node or link, this will display the node&amp;rsquo;s or link&amp;rsquo;s measures.  Table of Contents  Network Measures  Global Centrality  degree centrality Clossness centrality Betweenness centrality Eigenvector centrality  Other Network Measures  Clustering Effective size K nearest neighbors (KNN) Core number   Theatre attributes   Network Measures Global Centrality degree centrality nx.</description>
-    </item>
     
   </channel>
 </rss>
