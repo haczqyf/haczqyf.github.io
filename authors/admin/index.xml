@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>admin on Yifan Qian</title>
+    <title>Yifan Qian</title>
     <link>https://yifanqian.com/authors/admin/</link>
-    <description>Recent content in admin on Yifan Qian</description>
+    <description>Recent content on Yifan Qian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <copyright>&amp;copy; 2019 Yifan Qian</copyright>
@@ -13,10 +13,10 @@
     
     <item>
       <title></title>
-      <link>https://yifanqian.com/author/admin/</link>
+      <link>https://yifanqian.com/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://yifanqian.com/author/admin/</guid>
+      <guid>https://yifanqian.com/authors/admin/</guid>
       <description>I am currently a PhD student at the School of Business and Management in Queen Mary University of London, United Kingdom. My research is broadly concerned with computational social science and combines theories and methods from network science, sociology, machine learning and data science. The general goal of my work is to better understand the structure, functioning and consequences of complex large-scale networks across a number of empirical domains including citation networks, social networks and collaboration networks.</description>
     </item>
     

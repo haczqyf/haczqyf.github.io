@@ -411,32 +411,16 @@
   </url>
   
   <url>
-    <loc>https://yifanqian.com/author/admin/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <loc>https://yifanqian.com/authors/admin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://yifanqian.com/zh/author/admin/"
+                href="https://yifanqian.com/zh/authors/admin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yifanqian.com/author/admin/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/author/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/author/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/author/"
+                href="https://yifanqian.com/authors/admin/"
                 />
   </url>
   
@@ -497,22 +481,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://yifanqian.com/talk/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/authors/admin/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/authors/admin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/authors/admin/"
                 />
   </url>
   

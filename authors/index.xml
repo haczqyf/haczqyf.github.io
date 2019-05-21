@@ -85,12 +85,12 @@
     </item>
     
     <item>
-      <title>admin</title>
+      <title></title>
       <link>https://yifanqian.com/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://yifanqian.com/authors/admin/</guid>
-      <description></description>
+      <description>I am currently a PhD student at the School of Business and Management in Queen Mary University of London, United Kingdom. My research is broadly concerned with computational social science and combines theories and methods from network science, sociology, machine learning and data science. The general goal of my work is to better understand the structure, functioning and consequences of complex large-scale networks across a number of empirical domains including citation networks, social networks and collaboration networks.</description>
     </item>
     
   </channel>
