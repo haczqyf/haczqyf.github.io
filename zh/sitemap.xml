@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://yifanqian.com/zh/authors/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-05-21T17:18:02+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -114,6 +114,163 @@
   </url>
   
   <url>
+    <loc>https://yifanqian.com/zh/publication_types/1/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/publication_types/1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/publication_types/1/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/authors/luca-verginer/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/authors/luca-verginer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/authors/luca-verginer/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/authors/massimo-riccaboni/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/authors/massimo-riccaboni/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/authors/massimo-riccaboni/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/publication/qian-2019-measuring/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/publication/qian-2019-measuring/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/publication/qian-2019-measuring/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/authors/pietro-panzarasa/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/authors/pietro-panzarasa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/authors/pietro-panzarasa/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/publication_types/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/publication/qian-2019-intra/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/publication/qian-2019-intra/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/publication/qian-2019-intra/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/publication/qian-2019-linking/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/publication/qian-2019-linking/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/publication/qian-2019-linking/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/authors/mauricio-barahona/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/authors/mauricio-barahona/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/authors/mauricio-barahona/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/zh/authors/paul-expert/</loc>
+    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/authors/paul-expert/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/authors/paul-expert/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yifanqian.com/zh/tags/deep-learning/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
     <priority>0</priority>
@@ -176,22 +333,6 @@
   </url>
   
   <url>
-    <loc>https://yifanqian.com/zh/publication_types/1/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication_types/1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication_types/1/"
-                />
-  </url>
-  
-  <url>
     <loc>https://yifanqian.com/zh/publication/qian-2018-iccss/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
     <xhtml:link
@@ -203,70 +344,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yifanqian.com/zh/publication/qian-2018-iccss/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/zh/authors/mauricio-barahona/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/authors/mauricio-barahona/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/authors/mauricio-barahona/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/zh/authors/paul-expert/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/authors/paul-expert/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/authors/paul-expert/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/zh/authors/pietro-panzarasa/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/authors/pietro-panzarasa/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/authors/pietro-panzarasa/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/zh/publication_types/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication_types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication_types/"
                 />
   </url>
   
@@ -412,6 +489,7 @@
   
   <url>
     <loc>https://yifanqian.com/zh/authors/admin/</loc>
+    <lastmod>2019-05-21T17:18:02+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
