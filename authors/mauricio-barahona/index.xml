@@ -7,44 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <copyright>&amp;copy; 2019 Yifan Qian</copyright>
-    <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://yifanqian.com/authors/mauricio-barahona/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Linking the classification performance of Graph Convolutional Networks with the alignment of graphs and features</title>
-      <link>https://yifanqian.com/publication/qian-2019-linking/</link>
-      <pubDate>Thu, 18 Jul 2019 00:00:00 +0100</pubDate>
+      <title>Quantifying the alignment of graph and features in deep learning</title>
+      <link>https://yifanqian.com/publication/qian-2019-quantifying/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://yifanqian.com/publication/qian-2019-linking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Geometric deep learning and node classification: An application of Graph Convolutional Networks to citation networks</title>
-      <link>https://yifanqian.com/publication/qian-2018-iccss/</link>
-      <pubDate>Sat, 14 Jul 2018 00:00:00 +0100</pubDate>
-      
-      <guid>https://yifanqian.com/publication/qian-2018-iccss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Geometric deep learning and node classification: An application of Graph Convolutional Networks to citation networks</title>
-      <link>https://yifanqian.com/publication/qian-2018-netsci/</link>
-      <pubDate>Fri, 15 Jun 2018 00:00:00 +0100</pubDate>
-      
-      <guid>https://yifanqian.com/publication/qian-2018-netsci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Geometric deep learning with graphs: Linking the classification performance of Graph Convolutional Networks with the alignment of graphs and features</title>
-      <link>https://yifanqian.com/publication/qian-2018-netscimlns/</link>
-      <pubDate>Tue, 12 Jun 2018 00:00:00 +0100</pubDate>
-      
-      <guid>https://yifanqian.com/publication/qian-2018-netscimlns/</guid>
+      <guid>https://yifanqian.com/publication/qian-2019-quantifying/</guid>
       <description></description>
     </item>
     

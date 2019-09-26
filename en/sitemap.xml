@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://yifanqian.com/authors/</loc>
-    <lastmod>2019-05-21T17:18:02+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -67,7 +67,7 @@
   
   <url>
     <loc>https://yifanqian.com/tags/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -83,7 +83,7 @@
   
   <url>
     <loc>https://yifanqian.com/authors/yifan-qian/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -99,7 +99,7 @@
   
   <url>
     <loc>https://yifanqian.com/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -114,133 +114,14 @@
   </url>
   
   <url>
-    <loc>https://yifanqian.com/publication_types/1/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <loc>https://yifanqian.com/publication_types/3/</loc>
+    <lastmod>2019-05-30T00:00:00+01:00</lastmod>
     <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication_types/1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication_types/1/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/authors/luca-verginer/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/authors/luca-verginer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/authors/luca-verginer/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/authors/massimo-riccaboni/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/authors/massimo-riccaboni/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/authors/massimo-riccaboni/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/publication/qian-2019-measuring/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication/qian-2019-measuring/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication/qian-2019-measuring/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/authors/pietro-panzarasa/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/authors/pietro-panzarasa/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/authors/pietro-panzarasa/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/publication_types/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication_types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication_types/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/publication/qian-2019-intra/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication/qian-2019-intra/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication/qian-2019-intra/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/publication/qian-2019-linking/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication/qian-2019-linking/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication/qian-2019-linking/"
-                />
   </url>
   
   <url>
     <loc>https://yifanqian.com/authors/mauricio-barahona/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-05-30T00:00:00+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -256,7 +137,7 @@
   
   <url>
     <loc>https://yifanqian.com/authors/paul-expert/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-05-30T00:00:00+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -271,8 +152,51 @@
   </url>
   
   <url>
+    <loc>https://yifanqian.com/authors/pietro-panzarasa/</loc>
+    <lastmod>2019-05-30T00:00:00+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/authors/pietro-panzarasa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/authors/pietro-panzarasa/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/publication_types/</loc>
+    <lastmod>2019-05-30T00:00:00+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/publication/qian-2019-quantifying/</loc>
+    <lastmod>2019-05-30T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yifanqian.com/authors/tom-rieu/</loc>
+    <lastmod>2019-05-30T00:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yifanqian.com/tags/deep-learning/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -288,7 +212,7 @@
   
   <url>
     <loc>https://yifanqian.com/tags/graph-neural-network/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -304,7 +228,7 @@
   
   <url>
     <loc>https://yifanqian.com/talk/datanatives_2019_gcn/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -319,7 +243,7 @@
   
   <url>
     <loc>https://yifanqian.com/talk/uknetsciworkshop_2018_gcn/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -333,38 +257,8 @@
   </url>
   
   <url>
-    <loc>https://yifanqian.com/publication/qian-2018-iccss/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication/qian-2018-iccss/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication/qian-2018-iccss/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/publication/qian-2018-netsci/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication/qian-2018-netsci/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication/qian-2018-netsci/"
-                />
-  </url>
-  
-  <url>
     <loc>https://yifanqian.com/talk/netsci_mlns_2018_gcn/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -374,21 +268,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://yifanqian.com/talk/netsci_mlns_2018_gcn/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yifanqian.com/publication/qian-2018-netscimlns/</loc>
-    <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/publication/qian-2018-netscimlns/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/publication/qian-2018-netscimlns/"
                 />
   </url>
   
