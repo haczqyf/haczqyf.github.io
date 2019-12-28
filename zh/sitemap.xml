@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://yifanqian.com/zh/authors/</loc>
     <lastmod>2019-09-07T22:36:46+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -21,7 +20,6 @@
   <url>
     <loc>https://yifanqian.com/zh/tags/geo-social-network/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -52,7 +50,6 @@
   <url>
     <loc>https://yifanqian.com/zh/tags/social-diversity/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -68,7 +65,6 @@
   <url>
     <loc>https://yifanqian.com/zh/tags/</loc>
     <lastmod>2019-09-07T22:36:46+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -82,25 +78,8 @@
   </url>
   
   <url>
-    <loc>https://yifanqian.com/zh/authors/yifan-qian/</loc>
-    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yifanqian.com/authors/yifan-qian/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yifanqian.com/zh/authors/yifan-qian/"
-                />
-  </url>
-  
-  <url>
     <loc>https://yifanqian.com/zh/</loc>
     <lastmod>2019-09-07T22:36:46+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -114,21 +93,33 @@
   </url>
   
   <url>
+    <loc>https://yifanqian.com/zh/authors/yifan-qian/</loc>
+    <lastmod>2019-09-07T22:36:46+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yifanqian.com/authors/yifan-qian/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yifanqian.com/zh/authors/yifan-qian/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yifanqian.com/zh/publication_types/1/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yifanqian.com/zh/authors/luca-verginer/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yifanqian.com/zh/authors/massimo-riccaboni/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -139,7 +130,6 @@
   <url>
     <loc>https://yifanqian.com/zh/authors/pietro-panzarasa/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -155,7 +145,6 @@
   <url>
     <loc>https://yifanqian.com/zh/publication_types/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -181,7 +170,6 @@
   <url>
     <loc>https://yifanqian.com/zh/authors/mauricio-barahona/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -197,7 +185,6 @@
   <url>
     <loc>https://yifanqian.com/zh/authors/paul-expert/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -213,7 +200,6 @@
   <url>
     <loc>https://yifanqian.com/zh/tags/deep-learning/</loc>
     <lastmod>2019-09-07T22:36:46+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -229,7 +215,6 @@
   <url>
     <loc>https://yifanqian.com/zh/tags/graph-neural-network/</loc>
     <lastmod>2019-09-07T22:36:46+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -305,7 +290,6 @@
   <url>
     <loc>https://yifanqian.com/zh/publication_types/2/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -336,7 +320,6 @@
   <url>
     <loc>https://yifanqian.com/zh/authors/jie-tang/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -352,7 +335,6 @@
   <url>
     <loc>https://yifanqian.com/zh/authors/nan-jiang/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -368,7 +350,6 @@
   <url>
     <loc>https://yifanqian.com/zh/authors/wenge-rong/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -384,7 +365,6 @@
   <url>
     <loc>https://yifanqian.com/zh/authors/zhang-xiong/</loc>
     <lastmod>2019-04-28T13:52:43+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -414,7 +394,6 @@
   
   <url>
     <loc>https://yifanqian.com/zh/categories/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
