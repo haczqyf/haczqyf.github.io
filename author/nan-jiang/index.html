@@ -247,16 +247,54 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111984832-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-111984832-1', {});
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
 
   
 
+  
+
 
   
   
 
   
-  <link rel="alternate" href="/author/nan-jiang/index.xml" type="application/rss+xml" title="Academic">
+  <link rel="alternate" href="/author/nan-jiang/index.xml" type="application/rss+xml" title="Yifan Qian">
   
 
   <link rel="manifest" href="/index.webmanifest">
@@ -278,9 +316,9 @@
   
   <meta property="twitter:card" content="summary">
   
-  <meta property="og:site_name" content="Academic">
+  <meta property="og:site_name" content="Yifan Qian">
   <meta property="og:url" content="https://yifanqian.com/author/nan-jiang/">
-  <meta property="og:title" content="Nan Jiang | Academic">
+  <meta property="og:title" content="Nan Jiang | Yifan Qian">
   <meta property="og:description" content="PhD Student in Computational Social Science"><meta property="og:image" content="https://yifanqian.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://yifanqian.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
@@ -301,7 +339,7 @@
 
 
 
-  <title>Nan Jiang | Academic</title>
+  <title>Nan Jiang | Yifan Qian</title>
 
 </head>
 
@@ -366,7 +404,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Academic</a>
+      <a class="navbar-brand" href="/">Yifan Qian</a>
     </div>
     
 
@@ -379,7 +417,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Academic</a>
+      <a class="navbar-brand" href="/">Yifan Qian</a>
     </div>
     
 
@@ -617,7 +655,7 @@
   
 
   <p class="powered-by">
-    
+    © 2020 Yifan Qian
   </p>
 
   
