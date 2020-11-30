@@ -5,36 +5,12 @@
     <link>https://yifanqian.com/author/yifan-qian/</link>
       <atom:link href="https://yifanqian.com/author/yifan-qian/index.xml" rel="self" type="application/rss+xml" />
     <description>Yifan Qian</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020 Yifan Qian</copyright><lastBuildDate>Thu, 26 Nov 2020 17:43:20 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020 Yifan Qian</copyright>
     <image>
       <url>https://yifanqian.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Yifan Qian</title>
       <link>https://yifanqian.com/author/yifan-qian/</link>
     </image>
-    
-    <item>
-      <title>Quantifying the alignment of graph and features in deep learning (forthcoming)</title>
-      <link>https://yifanqian.com/publication/qian-2020-quantifying/</link>
-      <pubDate>Thu, 26 Nov 2020 17:43:20 +0000</pubDate>
-      <guid>https://yifanqian.com/publication/qian-2020-quantifying/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Geometric graphs from data to aid classification tasks with graph convolutional networks</title>
-      <link>https://yifanqian.com/publication/qian-2020-geometric/</link>
-      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://yifanqian.com/publication/qian-2020-geometric/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Citation regression analysis of computer science publications in different ranking categories and subfields</title>
-      <link>https://yifanqian.com/publication/qian-2017-citation/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>https://yifanqian.com/publication/qian-2017-citation/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
