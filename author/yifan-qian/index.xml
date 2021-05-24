@@ -5,36 +5,12 @@
     <link>https://yifanqian.com/author/yifan-qian/</link>
       <atom:link href="https://yifanqian.com/author/yifan-qian/index.xml" rel="self" type="application/rss+xml" />
     <description>Yifan Qian</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020 Yifan Qian</copyright><lastBuildDate>Fri, 09 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020 Yifan Qian</copyright>
     <image>
-      <url>https://yifanqian.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://yifanqian.com/author/yifan-qian/avatar_hu9f006a7116a7d1e54eb59297caeda5aa_649482_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Yifan Qian</title>
       <link>https://yifanqian.com/author/yifan-qian/</link>
     </image>
-    
-    <item>
-      <title>Geometric graphs from data to aid classification tasks with graph convolutional networks</title>
-      <link>https://yifanqian.com/publication/qian-2021-geometric/</link>
-      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://yifanqian.com/publication/qian-2021-geometric/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Quantifying the alignment of graph and features in deep learning</title>
-      <link>https://yifanqian.com/publication/qian-2021-quantifying/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://yifanqian.com/publication/qian-2021-quantifying/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Citation regression analysis of computer science publications in different ranking categories and subfields</title>
-      <link>https://yifanqian.com/publication/qian-2017-citation/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>https://yifanqian.com/publication/qian-2017-citation/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
