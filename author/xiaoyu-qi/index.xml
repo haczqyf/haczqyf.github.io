@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xiaoyu Qi | Yifan Qian</title>
+    <link>https://yifanqian.com/author/xiaoyu-qi/</link>
+      <atom:link href="https://yifanqian.com/author/xiaoyu-qi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Xiaoyu Qi</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Yifan Qian</copyright><lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yifanqian.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Xiaoyu Qi</title>
+      <link>https://yifanqian.com/author/xiaoyu-qi/</link>
+    </image>
+    
+    <item>
+      <title>InnovationInsights: A Visual Analytics Approach for Understanding the Dual Frontiers between Science and Technology</title>
+      <link>https://yifanqian.com/publication/wang-2023-innovationinsights/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://yifanqian.com/publication/wang-2023-innovationinsights/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
