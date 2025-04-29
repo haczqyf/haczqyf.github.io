@@ -5,12 +5,68 @@
     <link>https://yifanqian.com/author/yifan-qian/</link>
       <atom:link href="https://yifanqian.com/author/yifan-qian/index.xml" rel="self" type="application/rss+xml" />
     <description>Yifan Qian</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Yifan Qian</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Yifan Qian</copyright><lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://yifanqian.com/author/yifan-qian/avatar_hu9f006a7116a7d1e54eb59297caeda5aa_649482_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://yifanqian.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Yifan Qian</title>
       <link>https://yifanqian.com/author/yifan-qian/</link>
     </image>
+    
+    <item>
+      <title>SciSciGPT: Advancing Human-AI Collaboration in the Science of Science</title>
+      <link>https://yifanqian.com/publication/shao-2025-sciscigpt/</link>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://yifanqian.com/publication/shao-2025-sciscigpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tenure and Research Trajectories</title>
+      <link>https://yifanqian.com/publication/tripodi-2024-tenure/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://yifanqian.com/publication/tripodi-2024-tenure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InnovationInsights: A Visual Analytics Approach for Understanding the Dual Frontiers between Science and Technology</title>
+      <link>https://yifanqian.com/publication/wang-2023-innovationinsights/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://yifanqian.com/publication/wang-2023-innovationinsights/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network science, big data analytics, and deep learning: An interdisciplinary approach to the study of citation, social and collaboration networks</title>
+      <link>https://yifanqian.com/publication/qian-2021-network/</link>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://yifanqian.com/publication/qian-2021-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geometric graphs from data to aid classification tasks with graph convolutional networks</title>
+      <link>https://yifanqian.com/publication/qian-2021-geometric/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://yifanqian.com/publication/qian-2021-geometric/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantifying the alignment of graph and features in deep learning</title>
+      <link>https://yifanqian.com/publication/qian-2021-quantifying/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://yifanqian.com/publication/qian-2021-quantifying/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Citation regression analysis of computer science publications in different ranking categories and subfields</title>
+      <link>https://yifanqian.com/publication/qian-2017-citation/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://yifanqian.com/publication/qian-2017-citation/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
